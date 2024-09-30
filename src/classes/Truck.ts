@@ -39,6 +39,11 @@ class Truck extends Vehicle{
       this.weight = weight;
       this.topSpeed = topSpeed;
       
+      if(wheels.length !== 4){
+        this.wheels = [new Wheel(), new Wheel(), new Wheel(), new Wheel()];
+      }else{
+        this.wheels = wheels;
+      }
     }
     // TODO: The constructor should call the constructor of the parent class, Vehicle
     // TODO: The constructor should initialize the properties of the Truck class
