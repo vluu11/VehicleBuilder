@@ -258,6 +258,25 @@ class Cli {
       ])
       .then((answers) => {
         // TODO: Use the answers object to pass the required properties to the Motorbike constructor
+
+        const wheels = [answers.frontWheel, answers.rearWheel];
+
+        const motorbike = new Motorbike(
+          Cli.generateVin(),
+          answers.color,
+          answers.make,
+          answers.model,
+          parseInt(answers.year),
+          parseInt(answers.weight),
+          parseInt(answers.topSpeed),
+          wheels
+        );
+
+        this.vehicles.push(motorbike);
+     
+        this.selectedVehicleVin = motorbike.vin;
+  
+        this.performActions();
         // TODO: push the motorbike to the vehicles array
         // TODO: set the selectedVehicleVin to the vin of the motorbike
         // TODO: perform actions on the motorbike
