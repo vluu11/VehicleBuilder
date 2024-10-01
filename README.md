@@ -24,7 +24,9 @@ To use this app, the user must utilize their terminal and type 'npm run start' w
 
 ## Credits 
 
-Vuong Luu 
+Vuong Luu
+ - repo: https://github.com/vluu11/VehicleBuilder
+ - video: https://drive.google.com/file/d/1W_nnkofpJmg68dr-76lMDkBNAcaL7e-f/view
 
 ## License
     

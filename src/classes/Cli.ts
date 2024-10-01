@@ -15,7 +15,7 @@ class Cli {
   exit: boolean = false;
 
   // TODO: Update the constructor to accept Truck and Motorbike objects as well
-  constructor(vehicles: (Car| Truck| Motorbike)[]) {
+  constructor(vehicles: (Car| Truck | Motorbike)[]) {
     this.vehicles = vehicles;
   }
 
@@ -177,7 +177,7 @@ class Cli {
       ])
       .then((answers) => {
         // TODO: Use the answers object to pass the required properties to the Truck constructor
-      const truck = new Truck(
+        const truck = new Truck(
         Cli.generateVin(),
         answers.color,
         answers.make,
